@@ -23,12 +23,15 @@ for (const month of data) {
   mostRecentPrice = currentPrice;
 }
 
+// Helper Functions
 function equity() {
   return sharesOwned * mostRecentPrice;
 }
 
-function annualizedROI(contributions, equity, years) {
-  return (equity / contributions - 1) / years;
+function annualizedROI(contributions, equity, holdingPeriod) {
+  const ROI = equity / contributions;
+  const exponent = 1 / holdingPeriod;
+  return Math.pow(ROI, exponent) - 1;
 }
 
 // Print Results
