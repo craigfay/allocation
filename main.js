@@ -9,7 +9,7 @@ let sharesOwned = 0;
 let totalContributions = 0;
 let mostRecentPrice = 0;
 const monthlyContribution = 1000;
-const totalYears = 100;
+const totalYears = 10;
 
 /**
  * Helper Functions
@@ -22,7 +22,7 @@ function lastNYears(n) {
 
 // Determine the total value of assets after the simulation
 function equity() {
-  return sharesOwned * mostRecentPrice;
+  return sharesOwned * mostRecentPrice + investable;
 }
 
 // Annualized Return on Investment
@@ -35,12 +35,14 @@ function annualizedROI(contributions, equity, holdingPeriod) {
 // Simulate Investment Behavior
 for (const month of lastNYears(totalYears)) {
   investable += monthlyContribution;
+  investable += (month.Dividend / 12) * sharesOwned;
+
   const currentPrice = month.SP500;
   const amountPurchaseable = Math.floor(investable / currentPrice);
-  const transactionPrice = currentPrice * amountPurchaseable;
+
   sharesOwned += amountPurchaseable;
-  investable -= transactionPrice;
-  totalContributions += transactionPrice;
+  investable -= currentPrice * amountPurchaseable;
+  totalContributions += monthlyContribution;
   mostRecentPrice = currentPrice;
 }
 
