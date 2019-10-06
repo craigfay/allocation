@@ -9,10 +9,31 @@ let sharesOwned = 0;
 let totalContributions = 0;
 let mostRecentPrice = 0;
 const monthlyContribution = 1000;
-const totalYears = data.length / 12;
+const totalYears = 100;
+
+/**
+ * Helper Functions
+ */
+
+// Get only the last n years of the dataset
+function lastNYears(n) {
+  return data.slice(data.length - (n * 12));
+}
+
+// Determine the total value of assets after the simulation
+function equity() {
+  return sharesOwned * mostRecentPrice;
+}
+
+// Annualized Return on Investment
+function annualizedROI(contributions, equity, holdingPeriod) {
+  const ROI = equity / contributions;
+  const exponent = 1 / holdingPeriod;
+  return Math.pow(ROI, exponent) - 1;
+}
 
 // Simulate Investment Behavior
-for (const month of data) {
+for (const month of lastNYears(totalYears)) {
   investable += monthlyContribution;
   const currentPrice = month.SP500;
   const amountPurchaseable = Math.floor(investable / currentPrice);
@@ -23,19 +44,9 @@ for (const month of data) {
   mostRecentPrice = currentPrice;
 }
 
-// Helper Functions
-function equity() {
-  return sharesOwned * mostRecentPrice;
-}
-
-function annualizedROI(contributions, equity, holdingPeriod) {
-  const ROI = equity / contributions;
-  const exponent = 1 / holdingPeriod;
-  return Math.pow(ROI, exponent) - 1;
-}
-
 // Print Results
 console.log({
+  totalYears,
   investable: investable.toLocaleString(),
   sharesOwned: sharesOwned.toLocaleString(),
   totalContributions: totalContributions.toLocaleString(),
