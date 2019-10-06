@@ -9,6 +9,7 @@ let sharesOwned = 0;
 let totalContributions = 0;
 let mostRecentPrice = 0;
 const monthlyContribution = 1000;
+const totalYears = data.length / 12;
 
 // Simulate Investment Behavior
 for (const month of data) {
@@ -22,13 +23,20 @@ for (const month of data) {
   mostRecentPrice = currentPrice;
 }
 
+function equity() {
+  return sharesOwned * mostRecentPrice;
+}
+
+function annualizedROI(contributions, equity, years) {
+  return (equity / contributions - 1) / years;
+}
+
 // Print Results
 console.log({
-  investable,
-  sharesOwned,
-  totalContributions,
-  monthlyContribution,
-  mostRecentPrice,
-  equity: sharesOwned * mostRecentPrice,
-  totalMonths: data.length,
+  investable: investable.toLocaleString(),
+  sharesOwned: sharesOwned.toLocaleString(),
+  totalContributions: totalContributions.toLocaleString(),
+  mostRecentPrice: mostRecentPrice.toLocaleString(),
+  equity: (sharesOwned * mostRecentPrice).toLocaleString(),
+  annualizedROI: annualizedROI(totalContributions, equity(), totalYears),
 });
