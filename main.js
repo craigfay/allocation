@@ -1,7 +1,21 @@
-// Read Dataset
 const fs = require('fs');
-const content = fs.readFileSync('_SP500.json', 'utf8');
-const data = JSON.parse(content);
+
+// Read Datasets
+const datasets = {
+  tenYearBonds: JSON.parse(fs.readFileSync('_mid-term-bonds.json', 'utf8')),
+  sp500: JSON.parse(fs.readFileSync('_SP500.json', 'utf8')),
+}
+
+// Zip Datasets together
+// Find the longest dataset
+const [longest] = Object.keys(datasets).sort(function(a,b) {
+  if (datasets[a].length > datasets[b].length) return a;
+  if (datasets[a].length < datasets[b].length) return b;
+  return 0;
+})
+
+console.log(longest);
+process.exit();
 
 // Initialize Variables
 let investable = 0;
@@ -9,7 +23,7 @@ let sharesOwned = 0;
 let totalContributions = 0;
 let mostRecentPrice = 0;
 const monthlyContribution = 1000;
-const totalYears = 10;
+
 
 /**
  * Helper Functions
@@ -17,7 +31,7 @@ const totalYears = 10;
 
 // Get only the last n years of the dataset
 function lastNYears(n) {
-  return data.slice(data.length - (n * 12));
+  return sp500.slice(data.length - (n * 12));
 }
 
 // Determine the total value of assets after the simulation
