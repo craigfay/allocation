@@ -2,19 +2,19 @@ const fs = require('fs');
 
 // Read Datasets
 const datasets = {
-  tenYearBonds: JSON.parse(fs.readFileSync('_mid-term-bonds.json', 'utf8')),
-  sp500: JSON.parse(fs.readFileSync('_SP500.json', 'utf8')),
+  tenYearBonds: JSON.parse(fs.readFileSync('./data/mid-term-bonds.json', 'utf8')),
+  sp500: JSON.parse(fs.readFileSync('./data/SP500.json', 'utf8')),
 }
 
 // Zip Datasets together
 // Find the longest dataset
 const [longest] = Object.keys(datasets).sort(function(a,b) {
-  if (datasets[a].length > datasets[b].length) return a;
-  if (datasets[a].length < datasets[b].length) return b;
+  if (datasets[a].length < datasets[b].length) return 1;
+  if (datasets[a].length > datasets[b].length) return -1;
   return 0;
 })
 
-console.log(longest);
+// Exit Early; What's below will break
 process.exit();
 
 // Initialize Variables
