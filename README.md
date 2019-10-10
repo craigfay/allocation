@@ -8,6 +8,7 @@ Because commodities and bonds weren't available, there's not a direct way to bac
 # Datasets
 * [S&P500](https://datahub.io/core/s-and-p-500#resource-data)
 * [10 Year Treasury Bonds](https://datahub.io/core/bond-yields-us-10y)
+* [US Inflation Rates](https://datahub.io/core/cpi-us)
 
 # Resources
 * [US Inflation Rates](https://www.thebalance.com/u-s-inflation-rate-history-by-year-and-forecast-3306093)
