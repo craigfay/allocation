@@ -6061,7 +6061,7 @@
   },
   {
     "date": "2014-01-01",
-    "index": 233.916,
+    "index": null,
     "inflation": 0.37
   },
   {
@@ -6118,5 +6118,65 @@
     "date": "2014-12-01",
     "index": null,
     "inflation": 0.57
+  },
+  {
+    "date": "2015-01-01",
+    "index": null,
+    "inflation": 0.47
+  },
+  {
+    "date": "2015-02-01",
+    "index": null,
+    "inflation": 0.43
+  },
+  {
+    "date": "2015-03-01",
+    "index": null,
+    "inflation": 0.60
+  },
+  {
+    "date": "2015-04-01",
+    "index": null,
+    "inflation": 0.20
+  },
+  {
+    "date": "2015-05-01",
+    "index": null,
+    "inflation": 0.51
+  },
+  {
+    "date": "2015-06-01",
+    "index": null,
+    "inflation": 0.35
+  },
+  {
+    "date": "2015-07-01",
+    "index": null,
+    "inflation": 0.01
+  },
+  {
+    "date": "2015-08-01",
+    "index": null,
+    "inflation": 0.14
+  },
+  {
+    "date": "2015-09-01",
+    "index": null,
+    "inflation": 0.16
+  },
+  {
+    "date": "2015-10-01",
+    "index": null,
+    "inflation": 0.04
+  },
+  {
+    "date": "2015-11-01",
+    "index": null,
+    "inflation": 0.21
+  },
+  {
+    "date": "2015-12-01",
+    "index": null,
+    "inflation": 0.34
   }
 ]
