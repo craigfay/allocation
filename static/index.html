@@ -16,12 +16,13 @@
     const chart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: step(24, sp500Data.map(month => month.Date)),
+        labels: step(12, sp500Data.map(month => month.Date)),
         datasets: [{
           label: 'S&P 500',
+          pointRadius: 0,
           backgroundColor: 'rgba(255, 99, 132, 0)',
           borderColor: 'rgb(255, 99, 132)',
-          data: step(24, sp500Data.map(month => month.SP500)),
+          data: step(12, sp500Data.map(month => month.SP500)),
         }]
       },
       options: {},
