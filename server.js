@@ -1,16 +1,16 @@
-const http = require('http')
-const fs = require('fs')
+const http = require('http');
+const fs = require('fs');
 
+// Http Server
 const s = http.createServer((req, res) => {
-  try {
-    console.log(req.url)
-    const source = fs.createReadStream('./static' + req.url);
-    source.pipe(res);
-  } catch (e) {
-    console.log(e);
-    res.writeHead(404);
-    res.end('Not Found');
-  }
-})
+  const source = fs.createReadStream('./static' + req.url);
+  source.on('error', e => notFound(res));
+  res.writeHead(200, {'content-type':`text/${filetype(req.url)}` });
+  source.pipe(res);
+});
+
+// Helper Functions
+const filetype = path => path.split('.').slice(-1)[0];
+const notFound = res => res.writeHead(404);
 
 s.listen(80, () => console.log('...'));
