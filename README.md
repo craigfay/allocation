@@ -12,3 +12,6 @@ Because commodities and bonds weren't available, there's not a direct way to bac
 # Resources
 * [US Inflation Rates](https://www.thebalance.com/u-s-inflation-rate-history-by-year-and-forecast-3306093)
 * [Ray: "you really have to understand cross-asset correlation"](https://macro-ops.com/ray-dalio-portfolio-allocation-strategy-holy-grail/)
+
+# Dependencies
+* Node 12
