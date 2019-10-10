@@ -6063,5 +6063,60 @@
     "date": "2014-01-01",
     "index": 233.916,
     "inflation": 0.37
+  },
+  {
+    "date": "2014-02-01",
+    "index": null,
+    "inflation": 0.37
+  },
+  {
+    "date": "2014-03-01",
+    "index": null,
+    "inflation": 0.64
+  },
+  {
+    "date": "2014-04-01",
+    "index": null,
+    "inflation": 0.33
+  },
+  {
+    "date": "2014-05-01",
+    "index": null,
+    "inflation": 0.35
+  },
+  {
+    "date": "2014-06-01",
+    "index": null,
+    "inflation": 0.19
+  },
+  {
+    "date": "2014-07-01",
+    "index": null,
+    "inflation": 0.04
+  },
+  {
+    "date": "2014-08-01",
+    "index": null,
+    "inflation": 0.17
+  },
+  {
+    "date": "2014-09-01",
+    "index": null,
+    "inflation": 0.08
+  },
+  {
+    "date": "2014-10-01",
+    "index": null,
+    "inflation": 0.25
+  },
+  {
+    "date": "2014-11-01",
+    "index": null,
+    "inflation": 0.54
+  },
+  {
+    "date": "2014-12-01",
+    "index": null,
+    "inflation": 0.57
   }
 ]
