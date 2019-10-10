@@ -2,8 +2,8 @@ const fs = require('fs');
 
 // Read Datasets
 const datasets = {
-  tenYearBonds: JSON.parse(fs.readFileSync('./data/mid-term-bonds.json', 'utf8')),
-  sp500: JSON.parse(fs.readFileSync('./data/SP500.json', 'utf8')),
+  tenYearBonds: JSON.parse(fs.readFileSync('./static/mid-term-bonds.json', 'utf8')),
+  sp500: JSON.parse(fs.readFileSync('./static/SP500.json', 'utf8')),
 }
 
 // Zip Datasets together
