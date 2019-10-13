@@ -8,21 +8,27 @@
     return await response.json();
   }
 
+  function wrangleSP500(data) {
+    return step(12, data);
+  }
+
   // Return every nth element of an array
   const step = (n, arr) => arr.filter((e, i) => i % n == 0);
 
   async function drawChart() {
-    const sp500Data = await fetchJSON('/SP500.json');
+    const sp500Raw = await fetchJSON('/SP500.json');
+    const sp500 = wrangleSP500(sp500Raw);
+
     const chart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: step(12, sp500Data.map(month => month.Date)),
+        labels: sp500.map(month => month.Date),
         datasets: [{
           label: 'S&P 500',
           pointRadius: 0,
           backgroundColor: 'rgba(255, 99, 132, 0)',
           borderColor: 'rgb(255, 99, 132)',
-          data: step(12, sp500Data.map(month => month.SP500)),
+          data: sp500.map(month => month.SP500),
         }]
       },
       options: {},
