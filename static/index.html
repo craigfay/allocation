@@ -9,7 +9,10 @@
   }
 
   function wrangleSP500(data) {
-    return step(12, data);
+    data = step(12, data);
+    data = data.filter(month => new Date(month.Date) > new Date('1920-01-01'));
+    data = data.filter(month => new Date(month.Date) < new Date('2018-01-01'));
+    return data;
   }
 
   // Return every nth element of an array
