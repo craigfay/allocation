@@ -1,0 +1,611 @@
+[
+  {
+    "year": "1930",
+    "nominalLevel": 92.2,
+    "realLevel": 966.7,
+    "nominalChange": -16,
+    "realChange": -6.4
+  },
+  {
+    "year": "1931",
+    "nominalLevel": 77.4,
+    "realLevel": 904.8,
+    "nominalChange": -23.1,
+    "realChange": -12.9
+  },
+  {
+    "year": "1932",
+    "nominalLevel": 59.5,
+    "realLevel": 788.2,
+    "nominalChange": -4,
+    "realChange": -1.3
+  },
+  {
+    "year": "1933",
+    "nominalLevel": 57.2,
+    "realLevel": 778.3,
+    "nominalChange": 16.9,
+    "realChange": 10.8
+  },
+  {
+    "year": "1934",
+    "nominalLevel": 66.8,
+    "realLevel": 862.2,
+    "nominalChange": 11.1,
+    "realChange": 8.9
+  },
+  {
+    "year": "1935",
+    "nominalLevel": 74.3,
+    "realLevel": 939,
+    "nominalChange": 14.3,
+    "realChange": 12.9
+  },
+  {
+    "year": "1936",
+    "nominalLevel": 84.9,
+    "realLevel": 1060.5,
+    "nominalChange": 9.6,
+    "realChange": 5.1
+  },
+  {
+    "year": "1937",
+    "nominalLevel": 93,
+    "realLevel": 1114.6,
+    "nominalChange": -6.1,
+    "realChange": -3.3
+  },
+  {
+    "year": "1938",
+    "nominalLevel": 87.4,
+    "realLevel": 1077.7,
+    "nominalChange": 7,
+    "realChange": 8
+  },
+  {
+    "year": "1939",
+    "nominalLevel": 93.5,
+    "realLevel": 1163.6,
+    "nominalChange": 10.1,
+    "realChange": 8.8
+  },
+  {
+    "year": "1940",
+    "nominalLevel": 102.9,
+    "realLevel": 1266.1,
+    "nominalChange": 25.7,
+    "realChange": 17.7
+  },
+  {
+    "year": "1941",
+    "nominalLevel": 129.4,
+    "realLevel": 1490.3,
+    "nominalChange": 28.3,
+    "realChange": 18.9
+  },
+  {
+    "year": "1942",
+    "nominalLevel": 166,
+    "realLevel": 1771.8,
+    "nominalChange": 22.4,
+    "realChange": 17
+  },
+  {
+    "year": "1943",
+    "nominalLevel": 203.1,
+    "realLevel": 2073.7,
+    "nominalChange": 10.5,
+    "realChange": 8
+  },
+  {
+    "year": "1944",
+    "nominalLevel": 224.6,
+    "realLevel": 2239.4,
+    "nominalChange": 1.6,
+    "realChange": -1
+  },
+  {
+    "year": "1945",
+    "nominalLevel": 228.2,
+    "realLevel": 2217.8,
+    "nominalChange": -0.2,
+    "realChange": -11.6
+  },
+  {
+    "year": "1946",
+    "nominalLevel": 227.8,
+    "realLevel": 1960.9,
+    "nominalChange": 9.7,
+    "realChange": -1.1
+  },
+  {
+    "year": "1947",
+    "nominalLevel": 249.9,
+    "realLevel": 1939.4,
+    "nominalChange": 9.9,
+    "realChange": 4.1
+  },
+  {
+    "year": "1948",
+    "nominalLevel": 274.8,
+    "realLevel": 2020,
+    "nominalChange": -0.7,
+    "realChange": -0.5
+  },
+  {
+    "year": "1949",
+    "nominalLevel": 272.8,
+    "realLevel": 2008.9,
+    "nominalChange": 10,
+    "realChange": 8.7
+  },
+  {
+    "year": "1950",
+    "nominalLevel": 300.2,
+    "realLevel": 2184,
+    "nominalChange": 15.7,
+    "realChange": 8.1
+  },
+  {
+    "year": "1951",
+    "nominalLevel": 347.3,
+    "realLevel": 2360,
+    "nominalChange": 5.9,
+    "realChange": 4.1
+  },
+  {
+    "year": "1952",
+    "nominalLevel": 367.7,
+    "realLevel": 2456.1,
+    "nominalChange": 6,
+    "realChange": 4.7
+  },
+  {
+    "year": "1953",
+    "nominalLevel": 389.7,
+    "realLevel": 2571.4,
+    "nominalChange": 0.4,
+    "realChange": -0.6
+  },
+  {
+    "year": "1954",
+    "nominalLevel": 391.1,
+    "realLevel": 2556.9,
+    "nominalChange": 9,
+    "realChange": 7.1
+  },
+  {
+    "year": "1955",
+    "nominalLevel": 426.2,
+    "realLevel": 2739,
+    "nominalChange": 5.6,
+    "realChange": 2.1
+  },
+  {
+    "year": "1956",
+    "nominalLevel": 450.1,
+    "realLevel": 2797.4,
+    "nominalChange": 5.5,
+    "realChange": 2.1
+  },
+  {
+    "year": "1957",
+    "nominalLevel": 474.9,
+    "realLevel": 2856.3,
+    "nominalChange": 1.5,
+    "realChange": -0.7
+  },
+  {
+    "year": "1958",
+    "nominalLevel": 482,
+    "realLevel": 2835.3,
+    "nominalChange": 8.4,
+    "realChange": 6.9
+  },
+  {
+    "year": "1959",
+    "nominalLevel": 522.5,
+    "realLevel": 3031,
+    "nominalChange": 4,
+    "realChange": 2.6
+  },
+  {
+    "year": "1960",
+    "nominalLevel": 543.3,
+    "realLevel": 3108.7,
+    "nominalChange": 3.7,
+    "realChange": 2.6
+  },
+  {
+    "year": "1961",
+    "nominalLevel": 563.3,
+    "realLevel": 3188.1,
+    "nominalChange": 7.4,
+    "realChange": 6.1
+  },
+  {
+    "year": "1962",
+    "nominalLevel": 605.1,
+    "realLevel": 3383.1,
+    "nominalChange": 5.5,
+    "realChange": 4.4
+  },
+  {
+    "year": "1963",
+    "nominalLevel": 638.6,
+    "realLevel": 3530.4,
+    "nominalChange": 7.4,
+    "realChange": 5.8
+  },
+  {
+    "year": "1964",
+    "nominalLevel": 685.8,
+    "realLevel": 3734,
+    "nominalChange": 8.4,
+    "realChange": 6.5
+  },
+  {
+    "year": "1965",
+    "nominalLevel": 743.7,
+    "realLevel": 3976.7,
+    "nominalChange": 9.6,
+    "realChange": 6.6
+  },
+  {
+    "year": "1966",
+    "nominalLevel": 815,
+    "realLevel": 4238.9,
+    "nominalChange": 5.7,
+    "realChange": 2.7
+  },
+  {
+    "year": "1967",
+    "nominalLevel": 861.7,
+    "realLevel": 4355.2,
+    "nominalChange": 9.4,
+    "realChange": 4.9
+  },
+  {
+    "year": "1968",
+    "nominalLevel": 942.5,
+    "realLevel": 4569,
+    "nominalChange": 8.2,
+    "realChange": 3.1
+  },
+  {
+    "year": "1969",
+    "nominalLevel": 1019.9,
+    "realLevel": 4712.5,
+    "nominalChange": 5.5,
+    "realChange": 0.2
+  },
+  {
+    "year": "1970",
+    "nominalLevel": 1075.9,
+    "realLevel": 4722,
+    "nominalChange": 8.5,
+    "realChange": 3.3
+  },
+  {
+    "year": "1971",
+    "nominalLevel": 1167.8,
+    "realLevel": 4877.6,
+    "nominalChange": 9.8,
+    "realChange": 5.2
+  },
+  {
+    "year": "1972",
+    "nominalLevel": 1282.4,
+    "realLevel": 5134.3,
+    "nominalChange": 11.4,
+    "realChange": 5.6
+  },
+  {
+    "year": "1973",
+    "nominalLevel": 1428.5,
+    "realLevel": 5424.1,
+    "nominalChange": 8.4,
+    "realChange": -0.5
+  },
+  {
+    "year": "1974",
+    "nominalLevel": 1548.8,
+    "realLevel": 5396,
+    "nominalChange": 9,
+    "realChange": -0.2
+  },
+  {
+    "year": "1975",
+    "nominalLevel": 1688.9,
+    "realLevel": 5385.4,
+    "nominalChange": 11.2,
+    "realChange": 5.4
+  },
+  {
+    "year": "1976",
+    "nominalLevel": 1877.6,
+    "realLevel": 5675.4,
+    "nominalChange": 11.1,
+    "realChange": 4.6
+  },
+  {
+    "year": "1977",
+    "nominalLevel": 2086,
+    "realLevel": 5937,
+    "nominalChange": 13,
+    "realChange": 5.6
+  },
+  {
+    "year": "1978",
+    "nominalLevel": 2356.6,
+    "realLevel": 6267.2,
+    "nominalChange": 11.7,
+    "realChange": 3.2
+  },
+  {
+    "year": "1979",
+    "nominalLevel": 2632.1,
+    "realLevel": 6466.2,
+    "nominalChange": 8.8,
+    "realChange": -0.2
+  },
+  {
+    "year": "1980",
+    "nominalLevel": 2862.5,
+    "realLevel": 6450.4,
+    "nominalChange": 12.2,
+    "realChange": 2.6
+  },
+  {
+    "year": "1981",
+    "nominalLevel": 3211,
+    "realLevel": 6617.7,
+    "nominalChange": 4.2,
+    "realChange": -1.9
+  },
+  {
+    "year": "1982",
+    "nominalLevel": 3345,
+    "realLevel": 6491.3,
+    "nominalChange": 8.8,
+    "realChange": 4.6
+  },
+  {
+    "year": "1983",
+    "nominalLevel": 3638.1,
+    "realLevel": 6792,
+    "nominalChange": 11.1,
+    "realChange": 7.3
+  },
+  {
+    "year": "1984",
+    "nominalLevel": 4040.7,
+    "realLevel": 7285,
+    "nominalChange": 7.6,
+    "realChange": 4.2
+  },
+  {
+    "year": "1985",
+    "nominalLevel": 4346.7,
+    "realLevel": 7593.8,
+    "nominalChange": 5.6,
+    "realChange": 3.5
+  },
+  {
+    "year": "1986",
+    "nominalLevel": 4590.2,
+    "realLevel": 7860.5,
+    "nominalChange": 6.1,
+    "realChange": 3.5
+  },
+  {
+    "year": "1987",
+    "nominalLevel": 4870.2,
+    "realLevel": 8132.6,
+    "nominalChange": 7.9,
+    "realChange": 4.2
+  },
+  {
+    "year": "1988",
+    "nominalLevel": 5252.6,
+    "realLevel": 8474.5,
+    "nominalChange": 7.7,
+    "realChange": 3.7
+  },
+  {
+    "year": "1989",
+    "nominalLevel": 5657.7,
+    "realLevel": 8786.4,
+    "nominalChange": 5.7,
+    "realChange": 1.9
+  },
+  {
+    "year": "1990",
+    "nominalLevel": 5979.6,
+    "realLevel": 8955,
+    "nominalChange": 3.3,
+    "realChange": -0.1
+  },
+  {
+    "year": "1991",
+    "nominalLevel": 6174,
+    "realLevel": 8948.4,
+    "nominalChange": 5.9,
+    "realChange": 3.6
+  },
+  {
+    "year": "1992",
+    "nominalLevel": 6539.3,
+    "realLevel": 9266.6,
+    "nominalChange": 5.2,
+    "realChange": 2.7
+  },
+  {
+    "year": "1993",
+    "nominalLevel": 6878.7,
+    "realLevel": 9521,
+    "nominalChange": 6.3,
+    "realChange": 4
+  },
+  {
+    "year": "1994",
+    "nominalLevel": 7308.8,
+    "realLevel": 9905.4,
+    "nominalChange": 4.9,
+    "realChange": 2.7
+  },
+  {
+    "year": "1995",
+    "nominalLevel": 7664.1,
+    "realLevel": 10174.8,
+    "nominalChange": 5.7,
+    "realChange": 3.8
+  },
+  {
+    "year": "1996",
+    "nominalLevel": 8100.2,
+    "realLevel": 10561,
+    "nominalChange": 6.3,
+    "realChange": 4.5
+  },
+  {
+    "year": "1997",
+    "nominalLevel": 8608.5,
+    "realLevel": 11034.9,
+    "nominalChange": 5.6,
+    "realChange": 4.5
+  },
+  {
+    "year": "1998",
+    "nominalLevel": 9089.2,
+    "realLevel": 11525.9,
+    "nominalChange": 6.3,
+    "realChange": 4.7
+  },
+  {
+    "year": "1999",
+    "nominalLevel": 9660.6,
+    "realLevel": 12065.9,
+    "nominalChange": 6.5,
+    "realChange": 4.1
+  },
+  {
+    "year": "2000",
+    "nominalLevel": 10284.8,
+    "realLevel": 12559.7,
+    "nominalChange": 3.3,
+    "realChange": 1
+  },
+  {
+    "year": "2001",
+    "nominalLevel": 10621.8,
+    "realLevel": 12682.2,
+    "nominalChange": 3.3,
+    "realChange": 1.8
+  },
+  {
+    "year": "2002",
+    "nominalLevel": 10977.5,
+    "realLevel": 12908.8,
+    "nominalChange": 4.9,
+    "realChange": 2.8
+  },
+  {
+    "year": "2003",
+    "nominalLevel": 11510.7,
+    "realLevel": 13271.1,
+    "nominalChange": 6.6,
+    "realChange": 3.8
+  },
+  {
+    "year": "2004",
+    "nominalLevel": 12274.9,
+    "realLevel": 13773.5,
+    "nominalChange": 6.7,
+    "realChange": 3.3
+  },
+  {
+    "year": "2005",
+    "nominalLevel": 13093.7,
+    "realLevel": 14234.2,
+    "nominalChange": 5.8,
+    "realChange": 2.7
+  },
+  {
+    "year": "2006",
+    "nominalLevel": 13855.9,
+    "realLevel": 14613.8,
+    "nominalChange": 4.5,
+    "realChange": 1.8
+  },
+  {
+    "year": "2007",
+    "nominalLevel": 14477.6,
+    "realLevel": 14873.7,
+    "nominalChange": 1.7,
+    "realChange": -0.3
+  },
+  {
+    "year": "2008",
+    "nominalLevel": 14718.6,
+    "realLevel": 14830.4,
+    "nominalChange": -2,
+    "realChange": -2.8
+  },
+  {
+    "year": "2009",
+    "nominalLevel": 14418.7,
+    "realLevel": 14418.7,
+    "nominalChange": 3.8,
+    "realChange": 2.5
+  },
+  {
+    "year": "2010",
+    "nominalLevel": 14964.4,
+    "realLevel": 14783.8,
+    "nominalChange": 3.7,
+    "realChange": 1.6
+  },
+  {
+    "year": "2011",
+    "nominalLevel": 15517.9,
+    "realLevel": 15020.6,
+    "nominalChange": 4.1,
+    "realChange": 2.2
+  },
+  {
+    "year": "2012",
+    "nominalLevel": 16155.3,
+    "realLevel": 15354.6,
+    "nominalChange": 3.3,
+    "realChange": 1.7
+  },
+  {
+    "year": "2013",
+    "nominalLevel": 16691.5,
+    "realLevel": 15612.2,
+    "nominalChange": 4.4,
+    "realChange": 2.6
+  },
+  {
+    "year": "2014",
+    "nominalLevel": 17427.6,
+    "realLevel": 16013.3,
+    "nominalChange": 4,
+    "realChange": 2.9
+  },
+  {
+    "year": "2015",
+    "nominalLevel": 18120.7,
+    "realLevel": 16471.5,
+    "nominalChange": 2.8,
+    "realChange": 1.5
+  },
+  {
+    "year": "",
+    "nominalLevel": null,
+    "realLevel": null,
+    "nominalChange": null,
+    "realChange": null
+  }
+]
