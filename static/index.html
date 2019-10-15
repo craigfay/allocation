@@ -13,7 +13,6 @@
   }
 
   function wrangleSP500(data) {
-    // Use only the first month of every other year
     data = step(12, data);
     data = data.filter(month => new Date(month.Date) > new Date('1970-01-01'));
     data = data.filter(month => new Date(month.Date) < new Date('2015-01-01'));
@@ -29,10 +28,22 @@
   }
 
   function wrangleInflation(data) {
-    // Use only the first month of every other year
     data = step(12, data);
     data = data.filter(month => new Date(month.date) > new Date('1970-01-01'));
     data = data.filter(month => new Date(month.date) < new Date('2015-01-01'));
+    return data;
+  }
+
+  function wrangleGDP(data) {
+    data = data.filter(r => new Date(r.year) > new Date('1970-01-01'));
+    data = data.filter(r => new Date(r.year) < new Date('2015-01-01'));
+    data = data.map((r, index) => {
+      r.change = 0;
+      const currentLevel = r.realLevel;
+      const lastLevel = index ? data[index - 1].realLevel: currentLevel;
+      r.percentChange = percentageChange(lastLevel, currentLevel);
+      return r;
+    })
     return data;
   }
 
@@ -48,23 +59,33 @@
     const inflationRaw = await fetchJSON('/inflation.json');
     const inflation = wrangleInflation(inflationRaw);
 
+    const gdpRaw = await fetchJSON('/gdp.json');
+    const gdp = wrangleGDP(gdpRaw);
+
     const chart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: sp500.map(month => getYear(month.Date)),
+        labels: sp500.map(r => getYear(r.Date)),
         datasets: [{
           label: 'S&P 500',
           pointRadius: 0,
           backgroundColor: 'rgba(255, 99, 132, 0)',
           borderColor: 'rgb(255, 99, 132)',
-          data: sp500.map(month => month.change),
+          data: sp500.map(r => r.change),
         },
         {
           label: 'Inflation',
           pointRadius: 0,
           backgroundColor: 'rgba(139, 86, 219, 0)',
           borderColor: 'rgb(139, 86, 219)',
-          data: inflation.map(month => month.inflation),
+          data: inflation.map(r => r.inflation),
+        },
+        {
+          label: 'Real GDP * 10',
+          pointRadius: 0,
+          backgroundColor: 'rgba(70, 41, 230, 0)',
+          borderColor: 'rgb(34, 4, 207)',
+          data: gdp.map(r => r.percentChange * 10),
         }]
       },
       options: {},
