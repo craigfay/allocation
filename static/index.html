@@ -8,10 +8,31 @@
     return await response.json();
   }
 
+  function percentageChange(before, after) {
+    return (after - before) / before;
+  }
+
   function wrangleSP500(data) {
+    // Use only the first month of every year between 1920 and 2015
     data = step(12, data);
-    data = data.filter(month => new Date(month.Date) > new Date('1920-01-01'));
-    data = data.filter(month => new Date(month.Date) < new Date('2018-01-01'));
+    data = data.filter(month => new Date(month.Date) > new Date('1913-01-01'));
+    data = data.filter(month => new Date(month.Date) < new Date('2015-01-01'));
+    // Calculate the change in percentage
+    data = data.map((month, index) => {
+      month.change = 0;
+      const currentPrice = month.SP500;
+      const lastPrice = index ? data[index - 1].SP500 : currentPrice;
+      month.change = percentageChange(lastPrice, currentPrice);
+      return month;
+    })
+    return data;
+  }
+
+  function wrangleInflation(data) {
+    // Use only the first month of every year between 1920 and 2015
+    data = step(12, data);
+    data = data.filter(month => new Date(month.date) > new Date('1913-01-01'));
+    data = data.filter(month => new Date(month.date) < new Date('2015-01-01'));
     return data;
   }
 
@@ -22,6 +43,9 @@
     const sp500Raw = await fetchJSON('/SP500.json');
     const sp500 = wrangleSP500(sp500Raw);
 
+    const inflationRaw = await fetchJSON('/inflation.json');
+    const inflation = wrangleInflation(inflationRaw);
+
     const chart = new Chart(ctx, {
       type: 'line',
       data: {
@@ -31,7 +55,14 @@
           pointRadius: 0,
           backgroundColor: 'rgba(255, 99, 132, 0)',
           borderColor: 'rgb(255, 99, 132)',
-          data: sp500.map(month => month.SP500),
+          data: sp500.map(month => month.change),
+        },
+        {
+          label: 'Inflation',
+          pointRadius: 0,
+          backgroundColor: 'rgba(47, 158, 237, 0)',
+          borderColor: 'rgb(47, 158, 237)',
+          data: inflation.map(month => month.inflation),
         }]
       },
       options: {},
