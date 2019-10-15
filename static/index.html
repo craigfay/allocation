@@ -14,7 +14,7 @@
 
   function wrangleSP500(data) {
     // Use only the first month of every year between 1920 and 2015
-    data = step(12, data);
+    data = step(24, data);
     data = data.filter(month => new Date(month.Date) > new Date('1913-01-01'));
     data = data.filter(month => new Date(month.Date) < new Date('2015-01-01'));
     // Calculate the change in percentage
@@ -30,7 +30,7 @@
 
   function wrangleInflation(data) {
     // Use only the first month of every year between 1920 and 2015
-    data = step(12, data);
+    data = step(24, data);
     data = data.filter(month => new Date(month.date) > new Date('1913-01-01'));
     data = data.filter(month => new Date(month.date) < new Date('2015-01-01'));
     return data;
