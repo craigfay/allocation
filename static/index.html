@@ -66,27 +66,29 @@
       type: 'line',
       data: {
         labels: sp500.map(r => getYear(r.Date)),
-        datasets: [{
-          label: 'S&P 500',
-          pointRadius: 0,
-          backgroundColor: 'rgba(255, 99, 132, 0)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: sp500.map(r => r.change),
-        },
-        {
-          label: 'Inflation',
-          pointRadius: 0,
-          backgroundColor: 'rgba(139, 86, 219, 0)',
-          borderColor: 'rgb(139, 86, 219)',
-          data: inflation.map(r => r.inflation),
-        },
-        {
-          label: 'Real GDP * 10',
-          pointRadius: 0,
-          backgroundColor: 'rgba(70, 41, 230, 0)',
-          borderColor: 'rgb(34, 4, 207)',
-          data: gdp.map(r => r.percentChange * 10),
-        }]
+        datasets: [
+          {
+            label: 'Growth',
+            pointRadius: 0,
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(62, 132, 255, .9)',
+            data: gdp.map(r => r.percentChange * 5),
+          },
+          {
+            label: 'Inflation',
+            pointRadius: 0,
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(122, 49, 235, .9)',
+            data: inflation.map(r => r.inflation),
+          },
+          {
+            label: 'S&P 500',
+            pointRadius: 0,
+            backgroundColor: 'transparent',
+            borderColor: 'rgba(44, 232, 207, .9)',
+            data: sp500.map(r => r.change),
+          },
+        ]
       },
       options: {},
     });
